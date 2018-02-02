@@ -25,7 +25,8 @@ width: 500px;
 .musicContainer {
 	display:grid;
 	grid-template-areas:
-	  "pic middle right";
+	  "pic middle right"
+	  "footer footer footer";
 	grid-template-columns: 1fr 1fr 1fr;
 	grid-gap: 30px;
 }
@@ -129,12 +130,6 @@ div {
 
 }
 
-.footer {
-    grid-area: footer;
-   /* background-color: #007170;*/
-    height: 40px;
-}
-
 .left-half {
     background: #D3D6CB;
     grid-column: 1fr;
@@ -227,4 +222,11 @@ input#search-bar{
   height: 75px;
   top: -62px;
   right: -45px;
+}
+
+.footer {
+    grid-area: footer;
+   /* background-color: #007170;*/
+    height: 40px;
+    bottom: 5px;
 }
